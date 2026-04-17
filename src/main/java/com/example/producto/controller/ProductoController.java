@@ -29,7 +29,7 @@ public class ProductoController {
     }
 
     @PostMapping("/agregar")
-    public ResponseEntity<Producto> add_Producto (@RequestBody Producto producto) {
+    public ResponseEntity<Producto> addProducto (@RequestBody Producto producto) {
         Producto prod1 = productoService.guardarProducto(producto);
         if(prod1==null){
             return ResponseEntity.badRequest().build();
