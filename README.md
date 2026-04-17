@@ -4,7 +4,7 @@ Este documento define los estándares de nomenclatura, mensajería de commits y 
 
 ## 1. Nomenclatura de Ramas (Branching Strategy)
 
-Se utiliza un sistema de prefijos basado en el objetivo de la tarea. Todas las ramas deben escribirse en minúsculas y usar kebab-case.
+Se utiliza un sistema de prefijos basado en el objetivo de la tarea. Todas las ramas deben escribirse en minúsculas.
 
 | Prefijo | Descripción | Ejemplo               |
 | :--- | :--- |:----------------------|
