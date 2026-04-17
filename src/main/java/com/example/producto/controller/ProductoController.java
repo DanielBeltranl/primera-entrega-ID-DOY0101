@@ -22,7 +22,7 @@ public class ProductoController {
     private ProductoRepository productoRepository;
 
     @GetMapping("/listar")
-    public ResponseEntity<List<Producto>> listarTodo () {
+    public ResponseEntity<List<Producto>> listAL () {
 
         List<Producto> productos = productoService.listarProductos();
         return ResponseEntity.ok(productos);
