@@ -1,0 +1,20 @@
+name: Pipeline de Evaluacion
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verificacion-estudiante:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del codigo
+        uses: actions/checkout@v4
+
+      - name: Mensaje de confirmacion
+        run: |
+          echo "La accion se ejecuto correctamente"
+          echo "Rama actual: ${{ github.ref }}"
+          ls -R
